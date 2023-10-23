@@ -1,0 +1,380 @@
+/* ==================================== 
+#   DOCTOR DETAILS GENERAL STYLE
+==================================== */
+section {
+    padding: 2rem 8%;
+}
+
+.doctor-details {
+    background-color: var(--background-accent);
+    padding-top: 5rem;
+}
+
+/* ==================================== 
+#       DOCTOR DETAILS SECTION
+==================================== */
+
+.doctor-details .doctor-details-container {
+    background-color: var(--background-primary);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+}
+
+/* ===========[header Section]========== */
+
+.doctor-details .doctor-details-container .profile-header {
+    background-color: var(--primary);
+    /* background-image: url('../img/pattern_bg.jpg');
+    background-position: center;
+    background-size: cover; */
+    height: 13rem;
+    width: 100%;
+    border-radius: .5rem .5rem 0 0;
+}
+
+/* ===========[Infos Section]========== */
+
+.doctor-details .doctor-details-container .section-infos {
+    display: flex;
+    border: 1px solid #eee;
+    padding: 1rem;
+}
+
+.doctor-details .doctor-details-container .section-infos .image {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-top: -6rem;
+}
+
+.doctor-details .doctor-details-container .section-infos .image img {
+    height: 9rem;
+    width: 9rem;
+    object-fit: cover;
+    border-radius: 30rem;
+    background-color: #FFF;
+    padding: 2px;
+}
+
+.doctor-details .doctor-details-container .section-infos .content {
+    padding: 1rem;
+}
+
+.doctor-details .doctor-details-container .section-infos .content h3 {
+    color: var(--primary-text);
+    font-size: 1.3rem;
+    margin-bottom: .3rem;
+}
+
+.doctor-details .doctor-details-container .section-infos .content h4 {
+    color: var(--primary-text);
+    font-size: 1rem;
+    margin-bottom: .3rem;
+}
+
+.doctor-details .doctor-details-container .section-infos .content .reviwes {
+    margin-bottom: 1rem;
+}
+
+.doctor-details .doctor-details-container .section-infos .content .btn-appointment {
+    padding: .5rem 2rem;
+    font-size: .9rem;
+    color: #FFF;
+    background-color: var(--primary);
+    border-radius: .3rem;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+}
+
+/* ===========[Contact Section]========== */
+
+.doctor-details .doctor-details-container .section-contact {
+    padding: 1.3rem 3rem;
+}
+
+.doctor-details .doctor-details-container .section-contact h3 {
+    font-size: 1.3rem;
+    margin-bottom: .8rem;
+    color: var(--primary-text);
+}
+
+.doctor-details .doctor-details-container .section-contact .infos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.doctor-details .doctor-details-container .section-contact p {
+    color: var(--primary-text);
+    font-size: .9rem;
+    margin: .1rem 1rem .7rem 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.doctor-details .doctor-details-container .section-contact i {
+    color: var(--primary);
+    font-size: 1.1rem;
+    margin-right: .5rem;
+}
+
+/* ===========[Bio Section]========== */
+
+.doctor-details .doctor-details-container .section-bio {
+    color: var(--primary-text);
+    padding: 1.3rem 3rem;
+    /* margin: 0 1rem; */
+}
+
+.doctor-details .doctor-details-container .section-bio h3 {
+    font-size: 1.3rem;
+    margin-bottom: .8rem;
+    color: var(--primary-text);
+}
+
+.doctor-details .doctor-details-container .section-bio p {
+    font-size: .9rem;
+    line-height: 1.5rem;
+    /* margin-bottom: .3rem; */
+}
+
+/* ===========[Tarifs Section]========== */
+
+.doctor-details .doctor-details-container .section-tarif {
+    color: var(--primary-text);
+    padding: 1rem 3rem;
+}
+
+.doctor-details .doctor-details-container .section-tarif h3 {
+    font-size: 1.3rem;
+    margin-bottom: .8rem;
+    color: var(--primary-text);
+}
+
+.doctor-details .doctor-details-container .section-tarif p {
+    font-size: .9rem;
+    line-height: 1.8rem;
+}
+
+
+.doctor-details .doctor-details-container .section-tarif p i {
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-right: .5rem;
+}
+
+/* ===========[Diplomes Section]========== */
+
+.doctor-details .doctor-details-container .section-diplomes {
+    color: var(--primary-text);
+    padding: 1rem 3rem;
+    /* margin: 0 1rem; */
+}
+
+.doctor-details .doctor-details-container .section-diplomes h3 {
+    font-size: 1.3rem;
+    margin-bottom: .8rem;
+}
+
+.doctor-details .doctor-details-container .section-diplomes p {
+    font-size: .9rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    line-height: 1.8rem;
+}
+
+.doctor-details .doctor-details-container .section-diplomes p i {
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-right: .5rem;
+}
+
+/* ===========[Jours travail Section]========== */
+
+.doctor-details .doctor-details-container .section-jours-travail {
+    color: var(--primary-text);
+    padding: 1rem 3rem;
+    /* margin: 0 1rem; */
+}
+
+.doctor-details .doctor-details-container .section-jours-travail h3 {
+    font-size: 1.3rem;
+    margin-bottom: .8rem;
+    color: var(--primary-text);
+}
+
+.doctor-details .doctor-details-container .section-jours-travail .box-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.doctor-details .doctor-details-container .section-jours-travail .box-container .box {
+    border: .1rem solid rgb(190, 190, 190);
+    border-radius: .3rem;
+    /* padding: .3rem .5rem; */
+    padding: .8rem;
+    margin: 0 .5rem .5rem 0;
+    /* background-color: #48a870;
+    color: #fff;
+    box-shadow: var(--box-shadow); */
+}
+
+.doctor-details .doctor-details-container .section-jours-travail .box-container .box h5 {
+    font-size: .9rem;
+}
+
+.doctor-details .doctor-details-container .section-jours-travail .box-container .box p {
+    font-size: .8rem;
+}
+
+/* ===========[Experince Section]========== */
+
+.doctor-details .doctor-details-container .section-experience {
+    color: var(--primary-text);
+    padding: 1rem 3rem;
+    /* margin: 0 1rem; */
+}
+
+.doctor-details .doctor-details-container .section-experience h3 {
+    font-size: 1.3rem;
+    margin-bottom: .8rem;
+    color: var(--primary-text);
+}
+
+.doctor-details .doctor-details-container .section-experience p {
+    font-size: .9rem;
+    line-height: 1.8rem;
+}
+
+/* ===========[Equipments Section]========== */
+
+.doctor-details .doctor-details-container .section-equipments {
+    color: var(--primary-text);
+    padding: 1rem 3rem;
+    /* margin: 0 1rem; */
+}
+
+.doctor-details .doctor-details-container .section-equipments h3 {
+    font-size: 1.3rem;
+    margin-bottom: .8rem;
+    color: var(--primary-text);
+}
+
+.doctor-details .doctor-details-container .section-equipments p {
+    font-size: .9rem;
+    line-height: 1.8rem;
+}
+
+
+/* ===========[Lieu travail Section]========== */
+
+.doctor-details .doctor-details-container .section-lieu-travail {
+    color: var(--primary-text);
+    padding: 1rem;
+}
+
+.doctor-details .doctor-details-container .section-lieu-travail h3 {
+    font-size: 1.3rem;
+    margin-bottom: .8rem;
+}
+
+.doctor-details .doctor-details-container .section-lieu-travail .map {
+    height: 20rem;
+    border-radius: .3rem;
+}
+
+
+
+/* ==================================== 
+#             MEDIA QUERY 
+ ==================================== */
+
+/*Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+    section {
+        padding: 2rem 6%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+
+    section {
+        padding: 2rem 5%;
+    }
+
+    .doctor-details .doctor-details-container .section-contact .infos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+
+    section {
+        padding: 2rem 3%;
+    }
+
+    .doctor-details .doctor-details-container .section-contact ,
+    .doctor-details .doctor-details-container .section-bio ,
+    .doctor-details .doctor-details-container .section-tarif ,
+    .doctor-details .doctor-details-container .section-diplomes ,
+    .doctor-details .doctor-details-container .section-experience ,
+    .doctor-details .doctor-details-container .section-equipments ,
+    .doctor-details .doctor-details-container .section-lieu-travail ,
+    .doctor-details .doctor-details-container .section-jours-travail {
+        padding: 1.3rem 1.5rem;
+    }
+
+    .doctor-details .doctor-details-container .section-contact h3,
+    .doctor-details .doctor-details-container .section-bio h3,
+    .doctor-details .doctor-details-container .section-tarif h3,
+    .doctor-details .doctor-details-container .section-diplomes h3,
+    .doctor-details .doctor-details-container .section-experience h3,
+    .doctor-details .doctor-details-container .section-equipments h3,
+    .doctor-details .doctor-details-container .section-lieu-travail h3,
+    .doctor-details .doctor-details-container .section-jours-travail h3{
+        font-size: 1.2rem;
+    }
+
+
+    .doctor-details .doctor-details-container .profile-header {
+        display: none;
+    }
+
+    .doctor-details .doctor-details-container .section-infos .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .doctor-details .doctor-details-container .section-infos {
+        flex-direction: column;
+    }
+
+    .doctor-details .doctor-details-container .section-infos .image {
+        margin: auto;
+    }
+
+    .doctor-details .doctor-details-container .section-infos .content h3,
+    .doctor-details .doctor-details-container .section-infos .content h4,
+    .doctor-details .doctor-details-container .section-infos .content .reviwes {
+        text-align: center;
+    }
+
+    .doctor-details .doctor-details-container .section-contact .infos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1400px) {}

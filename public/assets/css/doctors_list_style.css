@@ -1,0 +1,366 @@
+::before, ::after {
+    box-sizing: border-box;
+}
+
+/* ==================================== 
+#           DOCTORS SECTION
+==================================== */
+
+.doctors {
+    background-color: var(--background-accent);
+    padding-top: 5rem;
+}
+
+.search-container {
+    padding: 1.5rem 0;
+    margin-bottom: 1rem;
+    box-shadow: var(--box-shadow-sm);
+    background-color: var(--background-primary);
+}
+
+
+.search-container form {
+    padding: 0 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    border-radius: .3rem;
+    box-shadow: none;
+}
+
+.search-container form label {
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+.search-container form input {
+    border: .1rem solid rgb(167, 167, 167);
+    border-radius: .2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .4rem;
+    width: 100%;
+    margin-top: .2rem;
+}
+
+.search-container select {
+    border: .1rem solid rgb(167, 167, 167);
+    border-radius: .2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .4rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    background: none;
+    margin-top: .2rem;
+}
+
+.search-container select option {
+    padding: 2rem;
+}
+
+.search-container #hidden-label {
+    color: transparent;
+}
+
+.search-container form .btn-search-doctor {
+    padding: .5rem 2rem;
+    /* margin-top: 1rem; */
+    font-size: .9rem;
+    color: #FFF;
+    background-color: var(--primary);
+    border-radius: .3rem;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+}
+
+.search-container form .btn-search-doctor:hover {
+    background-color: var(--primary-dark);
+}
+
+/* doctors cards  */
+
+.doctors .box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+}
+
+.doctors .box-container .box {
+    display: grid;
+    grid-template-areas: "image content content";
+    background-color: var(--background-primary);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    padding: 0 1rem;
+}
+
+.doctors .box-container .box .image {
+    grid-area: image;
+}
+
+.doctors .box-container .box .content {
+    grid-area: content;
+}
+
+.doctors .box-container .box:hover {
+    transform: translateY(-5px);
+    transition: all ease 0.3s;
+}
+
+.doctors .box-container .box .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.doctors .box-container .box img {
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    border-radius: 5rem;
+    font-size: 1.7rem;
+    color: #FFF;
+    background-color: var(--primary);
+    text-align: center;
+    /* margin-bottom: .5rem; */
+}
+
+.doctors .box-container .box .content {
+    padding: 1rem;
+}
+
+.doctors .box-container .box h3 {
+    color: var(--primary-text);
+    font-size: 1.3rem;
+    padding: .5rem 0;
+}
+
+.doctors .box-container .box p {
+    color: var(--secondary-text);
+    font-size: .9rem;
+    line-height: 1.3;
+    padding: .2rem 0;
+}
+
+.doctors .box-container .box p i {
+    color: var(--primary);
+    font-size: 1.1rem;
+    margin-right: .5rem;
+}
+
+.doctors .box-container .box .div-btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-auto-rows: minmax(2rem, auto); */
+    gap: 1rem;
+    padding: 0 1rem 0 0;
+    /* padding: 1.5rem 0; */
+}
+
+.doctors .box-container .box .div-btn .btn-rdv {
+    width: 100%;
+    padding: .4rem .9rem;
+    margin-top: .8rem;
+    /* margin-right: .5rem; */
+    text-align: center;
+    font-size: .85rem;
+    color: #FFF;
+    background-color: var(--primary);
+    border-radius: .3rem;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+
+.doctors .box-container .box .div-btn .btn-details {
+    width: 100%;
+    padding: .4rem .8rem;
+    margin-top: .8rem;
+    text-align: center;
+    font-size: .85rem;
+    color: var(--primary);
+    border-radius: .3rem;
+    border: .1rem solid var(--primary);
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+
+.doctors .box-container .box .div-btn .btn-rdv:hover {
+    color: #FFF;
+    background-color: var(--primary-dark);
+}
+
+.doctors .box-container .box .div-btn .btn-details:hover {
+    color: #FFF;
+    background-color: var(--primary);
+}
+
+
+/* ==================================== 
+#             EMPTY STAT
+ ==================================== */
+.empty-stat {
+    text-align: center;
+    color: var(--primary-text);
+}
+
+.empty-stat img {
+    text-align: center;
+    height: 15rem;
+    width: 15rem;
+}
+
+.empty-stat  h3 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+
+
+/* ==================================== 
+#             MEDIA QUERY 
+ ==================================== */
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+
+    /* doctors cards */
+    .doctors .box-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+
+    /* Search doctor  */
+    .search-container form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+
+    /* Search doctor  */
+    .search-container form {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .search-container #hidden-label {
+        display: none;
+    }
+
+    .search-container select {
+        margin-bottom: 0;
+    }
+
+    .search-container form {
+        gap: .5rem;
+    }
+
+    .search-container form label {
+        font-size: .9rem;
+    }
+
+    .search-container form .btn-search-doctor {
+        margin-top: 1rem;
+    }
+
+    /*  doctors cards  */
+    .doctors .box-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+
+    .doctors .box-container .box {
+        padding-top: 0rem;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+
+    .doctors {
+        padding-top: 6rem;
+    }
+
+    /* Serach doctor */
+    .heading {
+        font-size: 1.6rem;
+    }
+
+    .search-container {
+        padding: 1rem;
+    }
+
+    .search-container form {
+        padding: 0;
+        gap: .5rem;
+    }
+
+    .search-container form label {
+        font-size: .8rem;
+    }
+
+    /* doctor cards*/
+    .doctors .box-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+
+    .doctors .box-container .box {
+
+        grid-template-areas:
+            "image image image"
+            "content content content"
+            "content content content";
+        padding: 1rem 0 0 0;
+    }
+
+    .doctors .box-container .box img {
+        height: 5rem;
+        width: 5rem;
+        line-height: 5rem;
+    }
+
+    .doctors .box-container .box h3 {
+        text-align: center;
+        font-size: 1.1rem;
+        padding: .3rem 0;
+    }
+
+    .doctors .box-container .box p {
+        font-size: .8rem;
+        line-height: 1.3;
+        padding: .2rem 0;
+    }
+
+    .doctors .box-container .box .div-btn {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: .2rem;
+        padding: 0;
+    }
+
+    .doctors .box-container .box .div-btn .btn-rdv {
+        padding: 0.5rem 0.8rem;
+        margin-top: 0.7rem;
+        font-size: .9rem;
+    }
+
+    .doctors .box-container .box .div-btn .btn-details {
+        padding: 0.4rem 0.8rem;
+        margin-top: 0.5rem;
+        font-size: .9rem;
+    }
+}

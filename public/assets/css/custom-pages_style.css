@@ -1,0 +1,132 @@
+/* ==================================== 
+#           EMAIL SENT PAGE
+==================================== */
+
+.email-sent,
+.registration-done,
+.registration-sent {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-container .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: var(--primary-text);
+}
+
+.message-container .content .img-email {
+    height: 13rem;
+    width: 13rem;
+}
+
+.message-container .content .img-registration {
+    height: 10rem;
+    width: 10rem;
+}
+
+.message-container .content .img-registration-sent {
+    height: 15rem;
+    width: 15rem;
+}
+
+.message-container .content h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #27AE60;
+    padding: 1rem;
+}
+
+.message-container .content .text-danger {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgb(255, 62, 62);
+    padding: 1rem;
+}
+
+.message-container .content p {
+    font-size: 1rem;
+    font-weight: 500;
+    width: 70%;
+    text-align: center;
+}
+
+.message-container .content .btn-back-main,
+.message-container .content .btn-user-login {
+    padding: .5rem 2rem;
+    margin: 1.5rem;
+    font-size: .9rem;
+    color: #FFF;
+    background-color: var(--primary);
+    border-radius: .2rem;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+
+.message-container .content .btn-back-main:hover {
+    background-color: var(--primary-dark);
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+
+    .message-container .content {
+        margin-top: 3rem;
+    }
+
+    .message-container .content img {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .message-container .content h3 {
+        font-size: 1.4rem;
+    }
+
+    .message-container .content p {
+        font-size: .9rem;
+    }
+
+    .message-container .content .btn-back-main,
+    .message-container .content .btn-user-login {
+        padding: 0.5rem 1.5rem;
+        font-size: .8rem;
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+
+    .message-container .content {
+        margin-top: 9rem;
+    }
+
+    .message-container .content img {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .message-container .content h3 {
+        font-size: 1.3rem;
+        padding: 0;
+        margin-bottom: .5rem;
+    }
+
+    .message-container .content p {
+        font-size: .9rem;
+        width: 100%;
+    }
+
+}

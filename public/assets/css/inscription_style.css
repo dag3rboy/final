@@ -1,0 +1,211 @@
+/* ==================================== 
+#       INSCRIPTION SECTION
+==================================== */
+
+section {
+    padding: 2rem 10%;
+}
+
+.inscription {
+    background-color: var(--background-accent);
+    padding-top: 5rem;
+}
+
+.inscription-container {
+    background-color: var(--background-primary);
+    border-radius: .3rem;
+    box-shadow: var(--box-shadow);
+    color: var(--primary-text);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.inscription-container .image {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inscription-container .content h3 {
+    color: var(--primary-text);
+    font-size: 1.7rem;
+    font-weight: 600;
+    /* text-align: center; */
+    margin-top: 2rem;
+}
+
+.inscription-container .content h3 span {
+    color: var(--primary);
+}
+
+.inscription-container form {
+    padding: .5rem 2rem 1rem 0;
+}
+
+.inscription-container form .from-input-inline {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: .5rem;
+}
+
+.inscription-container form .from-input {
+    margin-bottom: .5rem;
+}
+
+.inscription-container form .from-input-inline input,
+.inscription-container form .from-input input {
+    border: .1rem solid rgb(197, 197, 197);
+    border-radius: .2rem;
+    width: 100%;
+    padding: .37rem .7rem;
+}
+
+
+.inscription-container form label {
+    font-size: .8rem;
+}
+
+.inscription-container form .from-input-inline select,
+.inscription-container form .from-input select {
+    border: .1rem solid rgb(197, 197, 197);
+    width: 100%;
+    color: var(--primary-text);
+    background: none;
+    font-size: .8rem;
+    padding: .37rem 1rem;
+    border-radius: .2rem;
+}
+
+.inscription-container form .btn-register {
+    background-color: var(--primary);
+    padding: .4rem 3rem;
+    width: 50%;
+    color: #fff;
+    border-radius: .2rem;
+    font-size: .9rem;
+    margin-top: .7rem;
+    text-transform: uppercase;
+}
+
+.inscription-container form .btn-register:hover {
+    background-color: var(--primary-dark);
+}
+
+.inscription-container form .deja-inscrie a {
+    color: var(--primary);
+    font-size: .9rem;
+    padding: .5rem 0;
+}
+
+.text-danger {
+    color: rgb(253, 39, 39);
+    font-size: .8rem;
+}
+
+/* ==================================== 
+ #             CUSTOM ALERT
+  ==================================== */
+
+.alert {
+    padding: .5rem;
+    text-align: center;
+    font-size: .9rem;
+    width: 100%;
+    border-radius: .2rem;
+}
+
+.alert-success {
+    color: #fff;
+    background-color: #47c079;
+}
+
+.alert-danger {
+    color: #fff;
+    background-color: #ff9844;
+}
+
+.alert-info {
+    color: #fff;
+    background-color: #0aa5ff;
+}
+
+
+/* ==================================== 
+#             MEDIA QUERY 
+ ==================================== */
+
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+    section {
+        padding: 2rem 5%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+    .inscription-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .inscription-container .image {
+        display: none;
+    }
+
+    .inscription-container form .btn-register {
+        width: 50%;
+    }
+
+    .inscription-container .content h3 {
+        padding: .5rem 2rem;
+    }
+
+    .inscription-container form {
+        padding: 0 2rem;
+    }
+
+    .inscription-container form .deja-inscrie {
+        margin: .5rem 0 1rem 0;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+
+    .inscription-container .content h3 {
+        text-align: center;
+    }
+
+    .inscription-container form .btn-register {
+        width: 100%;
+    }
+
+    .inscription-container form .deja-inscrie {
+        text-align: center;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .inscription-container form .from-input-inline {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: .5rem;
+    }
+
+    .inscription-container .content h3 {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        padding: .5rem 1rem;
+    }
+
+    .inscription-container form {
+        padding: 0 1rem;
+    }
+
+    .inscription-container form .btn-register {
+        width: 100%;
+    }
+}

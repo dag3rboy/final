@@ -1,0 +1,11 @@
+/* ==================================== 
+#   DOCTOR DETAILS GENERAL STYLE
+==================================== */
+section {
+    padding: 2rem 5%;
+}
+
+.doctor-details {
+    background-color: var(--background-accent);
+    padding-top: 5rem;
+}

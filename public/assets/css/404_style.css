@@ -1,0 +1,68 @@
+.page-not-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.page-not-found .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.page-not-found .wrapper img {
+    height: 15rem;
+    width: 15rem;
+}
+
+.page-not-found .wrapper h3 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.page-not-found .wrapper h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-text);
+    padding-bottom: 1rem;
+}
+
+.page-not-found .wrapper p {
+    font-size: .9rem;
+    font-weight: 500;
+    color: var(--primary-text);
+    padding-bottom: 1rem;
+}
+
+.page-not-found .wrapper a {
+    font-size: .9rem;
+    padding: .5rem 2rem;
+    color: #fff;
+    background-color: var(--primary);
+    box-shadow: var(--box-shadow);
+    border-radius: .3rem;
+}
+
+.page-not-found .wrapper a:hover {
+    background-color: var(--primary-dark);
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1400px) {}

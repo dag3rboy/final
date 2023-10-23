@@ -1,0 +1,132 @@
+/* ==================================== 
+#           DOCTORS SECTION
+==================================== */
+
+section {
+    padding: 2rem 12%;
+}
+
+.doctors {
+    background-color: var(--background-accent);
+    padding-top: 6rem;
+}
+
+.doctors .box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    /* padding: 0 3rem; */
+}
+
+.doctors .box-container .box {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /* flex-direction: column; */
+    background-color: var(--background-primary);
+    /* background-color: var(--primary); */
+    border-radius: .2rem;
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+    border-left: .2rem solid var(--primary);
+    text-transform: capitalize;
+}
+
+.doctors .box-container .box img {
+    height: 3.7rem;
+    width: 3.7rem;
+    /* margin-bottom: .5rem; */
+    background-color: var(--primary);
+    border-radius: 5rem;
+    margin-right: 1rem;
+}
+
+.doctors .box-container .box h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    /* color: #fff; */
+    color: var(--primary-text);
+    /* margin-bottom: .5rem; */
+}
+
+.doctors .box-container .box .btn--doctors-list {
+    background-color: var(--primary);
+    /* background: none; */
+    /* outline: none; */
+    /* border: 1px solid var(--primary); */
+    border-radius: .2rem;
+    padding: .3rem 1.5rem;
+    /* color: var(--primary); */
+    color: #fff;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: .9rem;
+}
+
+.doctors .box-container .box:hover {
+    transform: translateY(-5px);
+    transition: all ease 0.3s;
+}
+
+/* ==================================== 
+#             EMPTY STAT
+ ==================================== */
+.empty-stat {
+    text-align: center;
+    color: var(--primary-text);
+}
+
+.empty-stat img {
+    text-align: center;
+    height: 15rem;
+    width: 15rem;
+}
+
+.empty-stat h3 {
+    text-align: center;
+}
+
+/* ==================================== 
+#             MEDIA QUERY 
+ ==================================== */
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+
+    .doctors .box-container {
+        padding-top: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.3rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    section {
+        padding: 2rem 5%;
+    }
+
+    .doctors .box-container {
+        padding-top: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.1rem;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+
+    section {
+        padding: 2rem 7%;
+    }
+
+    .doctors .box-container {
+        padding-top: 2rem;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.1rem;
+    }
+
+    .doctors .box-container {
+        gap: 1rem;
+    }
+}
